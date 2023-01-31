@@ -11,11 +11,13 @@ function App() {
         <Link to="/charts">Charts</Link>
       </nav>
       <Switch>
-        <Route path="/table" component={Table}>
+        <Route path="/table">
           <h1>Table Libary</h1>
+          <Table />
         </Route>
-        <Route path="/charts" component={Chart}>
+        <Route path="/charts">
           <h1>Chart Library</h1>
+          <Chart />
         </Route>
       </Switch>
     </div>
